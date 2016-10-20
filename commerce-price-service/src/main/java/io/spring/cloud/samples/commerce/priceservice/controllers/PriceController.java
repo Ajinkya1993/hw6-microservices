@@ -28,7 +28,7 @@ public class PriceController {
     return priceConfig.getPrices();
   }
 
-  @RequestMapping("/price/{item}")
+  @RequestMapping("/prices/{item}")
   public Map<String,String> priceForItem(@PathVariable("item") String itemdId) {
     String price = priceConfig.getPriceForItem(itemdId);
     Map<String,String> result = new HashMap<>();
